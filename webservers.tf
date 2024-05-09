@@ -1,7 +1,7 @@
 # configured aws provider with proper credentials
 provider "aws" {
   region    = var.region
-  profile   = "default" 
+   
 }
 
 # create a vpc
@@ -21,7 +21,7 @@ resource "aws_subnet" "private" {
   cidr_block        = var.subnet_cidr_private[count.index]
   availability_zone = var.availability_zone[count.index]
   tags = {
-    "Name" = "Application-lb-private"
+    "Name" = "app_lb"
   }
 }
 

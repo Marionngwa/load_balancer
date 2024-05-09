@@ -3,6 +3,7 @@ variable "region" {
   description = "This is aws region"
   type        = string
   default     = "us-east-1"
+  
 }
 
 # define subnet variables
